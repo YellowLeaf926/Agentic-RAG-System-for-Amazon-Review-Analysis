@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head><title>Amazon Review RAG</title></head>
+<body>
+  <h2>Amazon Shopping App Review Q&A</h2>
+  <input id="q" type="text" placeholder="Ask a question..." style="width:400px">
+  <button onclick="ask()">Ask</button>
+  <p><b>Answer:</b></p>
+  <p id="answer"></p>
+  <script>
+    async function ask() {
+      const res = await fetch('/ask', {
+        method: 'POST',
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify({query: document.getElementById('q').value})
+      });
+      const data = await res.json();
+      document.getElementById('answer').innerText = data.answer;
+    }
+  </script>
+</body>
+</html>
