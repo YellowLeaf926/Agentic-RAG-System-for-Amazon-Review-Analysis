@@ -1,8 +1,6 @@
 # Amazon Shopping App Review Analyzer
 ### Advanced Agentic RAG with LoRA Fine-Tuning
 
-**Author:** Pinyi Li
-
 Different systems are designed to assess information retrival and answers that questions about Amazon Shopping app user reviews. A simple LLM, simple RAG, advanced RAG with base model, adavance rag with lora tuned model are used. The pipeline combines a Pinecone vector store, GPT-4o-mini agents, and a locally fine-tuned SmolLM2 model to deliver context-aware, high-quality answers through a Flask web interface.
 
 ---
