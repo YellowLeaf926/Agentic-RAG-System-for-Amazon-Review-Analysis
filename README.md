@@ -33,8 +33,8 @@ Different systems are designed to assess information retrival and answers that q
 ### 1. Clone the repo
 
 ```bash
-git clone https://github.com/NUMLDS/stitching-project-YellowLeaf926.git
-cd stitching-project-YellowLeaf926
+git clone https://github.com/YellowLeaf926/Agentic-RAG-System-for-Amazon-Review-Analysis.git
+cd Agentic-RAG-System-for-Amazon-Review-Analysis
 ```
 
 ### 2. Install dependencies
